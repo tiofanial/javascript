@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "aplikasi belajar javascript pt1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiofanial/javascript.git"
+  },
+  "author": "tiofani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiofanial/javascript/issues"
+  },
+  "homepage": "https://github.com/tiofanial/javascript#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
