@@ -1,14 +1,9 @@
-const readline = require('readline');
+const prompt = require('prompt-sync')({sigint:true});
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+const input = prompt('Masukkan bilangan genap: ');
+const x = parseFloat(input);
 
-rl.question('Masukkan bilangan genap: ', (input) => {
-  const x = parseFloat(input);
-
-  // Pengecekan kondisi
+// Pengecekan kondisi
   if (isNaN(x)) {
     console.log('Error: Input bukan bilangan');
   } else if (x < 0) {
@@ -20,6 +15,3 @@ rl.question('Masukkan bilangan genap: ', (input) => {
     const akarPangkat2 = Math.sqrt(x);
     console.log(`Akar pangkat 2 dari ${x} adalah: ${akarPangkat2}`);
   }
-
-  rl.close();
-});
