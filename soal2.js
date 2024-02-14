@@ -35,21 +35,18 @@ let productBin = {
     "message": "success"
   };
   
-  // Inisialisasi variabel totalQuantity
+
   let totalQuantity = 0;
-  
-  // Product Code yang ingin dicek
   const targetProductCode = "FBR00040101";
   
-  // Loop melalui data produk
+  // Loop 
   productBin.data.forEach(product => {
     // Cek apakah productCode sama dengan targetProductCode
     if (product.productCode === targetProductCode) {
-      // Jumlahkan quantity
       totalQuantity += product.quantity;
     }
   });
   
-  // Tampilkan hasil
+  // hasil
   console.log(`Total quantity untuk productCode ${targetProductCode}: ${totalQuantity}`);
   
